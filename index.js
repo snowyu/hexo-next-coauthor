@@ -34,6 +34,15 @@ hexo.extend.filter.register('theme_inject', function(injects) {
   i18n('languages', 'coauthor');
 
   injects.postMeta.raw('post-meta-coauthor', `
+  {%- if post.author %}
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-copyright"></i>
+    </span>
+    <span class="post-meta-item-text">{{ __('coauthor') + __('symbol.colon') }}</span>
+    {{- coauthor_post_meta(post.author) }}
+  </span>
+  {%- endif %}
   {%- if post.coauthor %}
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
