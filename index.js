@@ -5,6 +5,7 @@
 const {i18n} = require('./i18n')(hexo, __dirname);
 
 function createCoauthorPostMeta(name) {
+  name = name.toLowerCase();
   let coauthors = hexo.theme.config.coauthors || {};
   let postMeta = `<span>${name}</span>`;
   let coauthor = coauthors[name];
