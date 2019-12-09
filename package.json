@@ -9,6 +9,7 @@
   "author": "",
   "license": "LGPL-3.0",
   "dependencies": {
+    "hexo-cake-utils": "github:snowyu/hexo-cake-utils",
     "js-yaml": "^3.13.1"
   }
 }

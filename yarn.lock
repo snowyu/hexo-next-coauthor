@@ -14,6 +14,12 @@ esprima@^4.0.0:
   resolved "https://registry.npmjs.org/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
+"hexo-cake-utils@github:snowyu/hexo-cake-utils":
+  version "1.1.0"
+  resolved "https://codeload.github.com/snowyu/hexo-cake-utils/tar.gz/f8db7604f9255cb39be7c4caf87b561ceda86a6b"
+  dependencies:
+    js-yaml "^3.13.1"
+
 js-yaml@^3.13.1:
   version "3.13.1"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"

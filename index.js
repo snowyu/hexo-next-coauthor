@@ -1,12 +1,13 @@
 /* global hexo */
 
 'use strict';
+const utils = require('hexo-cake-utils')(hexo, __dirname)
 
 const {i18n} = require('./i18n')(hexo, __dirname);
 
 function createCoauthorPostMeta(name) {
   name = name.toLowerCase();
-  let coauthors = hexo.theme.config.coauthors || {};
+  let coauthors = utils.defaultConfigFile('coauthors');
   let postMeta = `<span>${name}</span>`;
   let coauthor = coauthors[name];
 
